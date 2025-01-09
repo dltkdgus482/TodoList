@@ -1,0 +1,12 @@
+.issue {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 200px;
+  margin: 10px;
+}
+
+.issue p {
+  font-weight: bold;
+}
