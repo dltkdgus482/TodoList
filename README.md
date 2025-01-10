@@ -73,6 +73,13 @@
 
 ### 1. **Bundler로 Vite를 선택한 이유**
 
+- 브라우저에서 ESM을 지원하기 전까지는 Javascript 모듈화를 네이티브 레벨에서 진행 불가능한 문제
+- 브라우저에서 ESM을 지원하기 시작하고 나서(2017) ESM 및 네이티브 언어로 작성된 Vite가 등장(2020)
+- ESM 및 네이티브 언어로 작성되었기 때문에 다른 번들러에 비해 성능이 좋음
+- dependencies와 같은 개발 중 바뀌지 않는 코드의 경우 Go로 작성된 Esuild로 번들링을 진행
+- 수정이 매우 잦은 소스 코드의 경우 Native ESM을 이용해 소스 코드를 변환
+- Reference: [Vite를 사용해야 하는 이유](https://ko.vitejs.dev/guide/why.html)
+
 ### 2. **Reset CSS 적용 전후 비교**
 
 - Reset CSS를 적용하기 전 아래의 사진과 같이 브라우저마다 UI가 다른 문제가 발생
@@ -80,5 +87,3 @@
 <table> <thead> <tr> <th>Reset CSS 적용 전 (Chrome)</th> <th>Reset CSS 적용 후 (Chrome)</th> </tr> </thead> <tbody> <tr> <td> <img src="./public/chromeWithoutResetCss.png" alt="Before Reset Chrome" width="300"> </td> <td> <img src="./public/chromeWithResetCss.png" alt="After Reset Chrome" width="300"> </td> </tr> <tr> <th>Reset CSS 적용 전 (Safari)</th> <th>Reset CSS 적용 후 (Safari)</th> </tr> <tr> <td> <img src="./public/safariWithoutResetCss.png" alt="Before Reset Safari" width="300"> </td> <td> <img src="./public/safariWithResetCss.png" alt="After Reset Safari" width="300"> </td> </tr> </tbody> </table>
 
 ### 3. **Unit Test**
-
-- Unit Test를 위해 Jest Library를 활용
