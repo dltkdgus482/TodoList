@@ -73,6 +73,12 @@
 
 ### 1. **Bundler로 Vite를 선택한 이유**
 
-### 2. **Reset CSS 적용 전후 차이**
+### 2. **Reset CSS 적용 전후 비교**
+
+- Reset CSS를 적용하기 전 아래의 사진과 같이 브라우저마다 UI가 다른 문제가 발생
+
+<table> <thead> <tr> <th>Reset CSS 적용 전 (Chrome)</th> <th>Reset CSS 적용 후 (Chrome)</th> </tr> </thead> <tbody> <tr> <td> <img src="./public/chromeWithoutResetCss.png" alt="Before Reset Chrome" width="300"> </td> <td> <img src="./public/chromeWithResetCss.png" alt="After Reset Chrome" width="300"> </td> </tr> <tr> <th>Reset CSS 적용 전 (Safari)</th> <th>Reset CSS 적용 후 (Safari)</th> </tr> <tr> <td> <img src="./public/safariWithoutResetCss.png" alt="Before Reset Safari" width="300"> </td> <td> <img src="./public/safariWithResetCss.png" alt="After Reset Safari" width="300"> </td> </tr> </tbody> </table>
 
 ### 3. **Unit Test**
+
+- Unit Test를 위해 Jest Library를 활용
